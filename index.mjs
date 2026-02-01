@@ -188,7 +188,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
     const [, author] = message.content.split('\n');
 
     await message.edit({
-      content: `→ **${newTask}**\n${author}`,
+      content: `>>> → **${newTask}**\n${author}`,
     });
 
     await interaction
